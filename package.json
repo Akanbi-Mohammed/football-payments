@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "firebase": "^12.1.0",
+    "stripe": "^18.4.0"
+  },
+  "devDependencies": {
+    "@types/stripe": "^8.0.416"
+  }
+}
