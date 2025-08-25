@@ -38,3 +38,6 @@ export function getAdminAuth(): Auth {
     if (!_auth) _auth = getAuth(getAdminApp());
     return _auth;
 }
+
+export const db = getDb();
+export const auth = getAdminAuth();
