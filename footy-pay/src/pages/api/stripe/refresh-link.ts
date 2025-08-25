@@ -4,7 +4,7 @@ import { db } from "@/lib/firebaseAdmin"; // Admin SDK import (NOT client SDK)
 
 // Initialise Stripe with correct version
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: "2025-07-30.basil", // Use a stable version like this
+
 });
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
