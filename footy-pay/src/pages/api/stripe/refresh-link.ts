@@ -37,8 +37,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         // Generate a new onboarding link
         const accountLink = await stripe.accountLinks.create({
             account: data.stripeAccountId,
-            refresh_url: "http://localhost:3000/create", // Change in production
-            return_url: `http://localhost:3000/create?accountId=${data.stripeAccountId}`,
+            refresh_url: "https://football-payments.vercel.app/create", // Change in production
+            return_url: `https://football-payments.vercel.app/create?accountId=${data.stripeAccountId}`,
             type: "account_onboarding",
         });
 
